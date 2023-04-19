@@ -5,8 +5,10 @@ using System.Text;
 
 namespace ConsoleApp30
 {
-    public abstract class DeliverHelper
+    public class Nail : Item, IElement
     {
-        public abstract void Delivery(Order order);
+        public Nail() : base("Nail", 10)
+        {
+        }
     }
 }

@@ -11,7 +11,7 @@ namespace ConsoleApp30
         private const decimal minBasketCost = 30;
         private const decimal discountRate = 0.30m;
 
-        public PromoCodeBasket(List<Item> items) : base(items)
+        public PromoCodeBasket(List<IElement> items) : base(items)
         {
         }
 

@@ -5,7 +5,7 @@ Console.WriteLine("Hello, World!");
 
 ////////////////////////////////////
 
-List<Item> items = new List<Item>() { new Item() { Name = "Грабли", Cost = 100 } };
+List<IElement> items = new List<IElement>() { new Iron(), new Nail() };
 DefaultBasket db = new DefaultBasket(items);
 DefaultBasket pcb = new PromoCodeBasket(items);
 

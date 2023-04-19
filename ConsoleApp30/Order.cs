@@ -11,17 +11,7 @@ namespace ConsoleApp30
         
         public void Submit()
         {
-            //PromoCodeBasket p = Basket as PromoCodeBasket;
-            //if (p != null)
-            //{
-            //    Console.WriteLine($"Basket cost is {p.TotalCost}");
-            //}
-            //else
-            //{
-            //    Console.WriteLine($"Basket cost is {Basket.TotalCost}");
-            //}
-
-            Console.WriteLine($"Basket cost is {Basket.TotalCost}");
+            Console.WriteLine($"Basket cost is {Basket.Cost}");
         }
 
 

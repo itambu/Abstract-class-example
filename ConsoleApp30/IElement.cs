@@ -5,8 +5,8 @@ using System.Text;
 
 namespace ConsoleApp30
 {
-    public abstract class DeliverHelper
+    public interface IElement : ICostable
     {
-        public abstract void Delivery(Order order);
+        string? Name { get; }
     }
 }

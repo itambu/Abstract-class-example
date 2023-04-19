@@ -5,8 +5,10 @@ using System.Text;
 
 namespace ConsoleApp30
 {
-    public abstract class DeliverHelper
+    public class Cola : IElement
     {
-        public abstract void Delivery(Order order);
+        public string? Name => "Cola";
+
+        public decimal Cost => 5;
     }
 }

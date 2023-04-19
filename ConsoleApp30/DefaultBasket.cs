@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp30
 {
-    public class DefaultBasket
+    public class DefaultBasket : ICostable
     {
-        public List<Item> Items { get; protected set; }
+        public List<IElement> Items { get; protected set; }
 
-        public DefaultBasket(List<Item> items) 
+        public DefaultBasket(List<IElement> items) 
         {
             Items = items;
         }
 
-        public decimal TotalCost
+        public decimal Cost
         {
             get 
             {

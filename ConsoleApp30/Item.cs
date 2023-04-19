@@ -1,8 +1,15 @@
 ﻿namespace ConsoleApp30
 {
-    public class Item
+    public abstract class Item
     {
-        public int Cost { get; set; }
-        public string Name { get; set; }
+        public int Id { get; set; }
+        public decimal Cost { get; set; }
+        public string? Name { get; set; }
+
+        public Item(string? name, int cost)
+        {
+            Cost = cost;
+            Name = name;
+        }
     }
 }
